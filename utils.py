@@ -1,5 +1,5 @@
 def juego():
-    palabra=input("Indique la palabra a adivinar").upper()
+    palabra=input("J1 NO MIRES \nJ2-Indique la palabra a adivinar: ").upper()
     p_oculta= (["_"] * len(palabra))
     p_lista=list(palabra)
     letras_usadas=[]
@@ -20,10 +20,10 @@ def juego():
             print("Quedan letras por descubrir:",(p_oculta))
         else:
             vidas=vidas-1
-            print("Nooo, prueba otra letra \n Te quedan", vidas, "vidas.")
+            print("Nooo, prueba otra letra \nTe quedan", vidas, "vidas.")
                 
     if vidas==0 or not"_" in p_oculta:
         if vidas==0:
-            print("GAME OVER ", muerte)
+            print("GAME OVER ", muerte,"\nRevancha?¿")
         elif not"_" in p_oculta:
-            print("CONSEGUIDO ", victoria, "LA PALABRA ERA", palabra.upper())
+            print("CONSEGUIDO", victoria, "LA PALABRA ERA", palabra.upper(), "\nOtra partida?")
